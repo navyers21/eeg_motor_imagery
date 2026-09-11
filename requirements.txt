@@ -1,0 +1,6 @@
+mne>=1.12,<1.13
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.5
+pyriemann>=0.7
+matplotlib>=3.8

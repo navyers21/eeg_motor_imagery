@@ -1,0 +1,12 @@
+timestamp,model,mean_acc,std_acc,min_acc,max_acc,n_subjects,evaluation_method,notes
+2026-09-09T00:00:00,01_eegnet,52.50,,,,20,fixed 60/20 split,initial run - no weight decay
+2026-09-09T00:00:00,02_shallowconvnet,50.83,,,,20,fixed 60/20 split,initial run - no weight decay
+2026-09-09T00:00:00,03_eegnet_fusion,52.61,,,,20,fixed 60/20 split,initial run - no weight decay
+2026-09-10T20:50:57,01_band_power_lda,50.89,6.70,40.00,64.44,10,10-fold LOSO,shrinkage LDA
+2026-09-10T21:14:14,01_band_power_lda,58.60,11.11,37.78,88.89,80,80-fold LOSO,"log-power, StandardScaler, shrinkage LDA, channels=all"
+2026-09-10T21:23:05,01_band_power_lda,61.21,11.07,42.22,95.56,80,80-fold LOSO,"log-power, StandardScaler, shrinkage LDA, channels=motor"
+2026-09-10T21:44:16,02_csp_lda,61.55,12.58,40.00,95.56,8OTHIS IS A TEST
+2026-09-10T22:19:45,02_csp_lda,62.80,13.00,40.00,95.56,80,80-fold LOSO,"shrinkage LDA, channels=motor"
+2026-09-10T22:51:37,03_riemannian_tangent,62.18,12.25,40.00,93.33,80,80-fold LOSO,class_weight balanced
+2026-09-11T13:12:20,03_riemannian_mdm,51.32,4.04,46.67,66.67,80,80-fold LOSO,"MDM, no alignment — baseline for comparing against aligned version"
+2026-09-11T13:29:42,04_riemannian_mdm_aligned,67.66,13.75,42.22,100.00,80,80-fold LOSO,"MDM (minimum distance to mean), no tangent-space vectorization or parametric classifier — structurally avoids the overfitting mechanism seen with logistic regression on tangent-space features"

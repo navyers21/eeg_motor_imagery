@@ -1,1 +1,11 @@
-github.com/github/gitignore/blob/main/Python.gitignore 
+usable_epochs_cache*.pkl
+*.edf
+*.edf.event
+logs/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+venv/
+.venv/
