@@ -1,7 +1,5 @@
 """
-Feature extraction and classical-model pipeline builders. build_csp_pipeline(), build_mdm_pipeline(),
-and build_fbcsp_pipeline() return unfit sklearn pipelines — call
-.fit(X_train, y_train) on them in each model script.
+Feature extraction and classical-model pipeline builders. 
 """
 import numpy as np
 from scipy.signal import butter, filtfilt

@@ -1,9 +1,7 @@
 """
 Turns preprocessed epochs into model-ready arrays, and provides the shared
 LOSO splitting logic. Every model script in models/ imports get_loso_split
-from here rather than reimplementing it — this guarantees all six models
-are evaluated on identical train/test partitions, so the final comparison
-table is actually apples-to-apples.
+from here rather than reimplementing it 
 """
 import numpy as np
 

@@ -1,5 +1,6 @@
 """
-Preprocessing pipeline: load raw EDF, clean the signal, epoch trials.
+Preprocessing pipeline: load raw EDF, clean the signal 
+(channel drop, bandpass, bad-channel detection, CAR, interpolation), epoch trials.
 Used identically by every model training script and by predict.py, so
 training and inference always go through the exact same transformation.
 """
