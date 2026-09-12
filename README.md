@@ -91,6 +91,8 @@ among the weakest here too.
 | Riemannian MDM (no alignment) | 51.32% | 4.04% | 46.7–66.7% | 80-fold LOSO |
 | **Riemannian MDM + Alignment** | **67.66%** | 13.75% | 42.2–100.0% | 80-fold LOSO |
 
+![Learning curves for all four models](assets/learning_curves_all_models.png)
+
 Per-subject accuracy for every model is saved to `assets/per_subject/*.json`,
 and the corresponding sorted accuracy plots to `assets/loso_accuracy_*.png`.
 
